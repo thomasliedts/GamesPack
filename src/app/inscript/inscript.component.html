@@ -1,1 +1,16 @@
-<p>inscript works!</p>
+<form [formGroup]="creationForm">
+    <div class="form-group">
+        <label for="Pseudo">Pseudo:</label>
+        <input type="texte" class="form-control" [(ngModel)]="inscription.name" formControlName="name" id="pseudo">
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" [(ngModel)]="inscription.email" formControlName="email" id="email">
+    </div>
+    <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" [(ngModel)]="inscription.password"  formControlName="password" id="pwd">
+    </div>
+    
+    <button type="submit" class="btn btn-primary" (click)='CreateUserNew()'>Submit</button>
+</form>
