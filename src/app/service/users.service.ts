@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormBuilder, FormGroup, NgForm } from '@angular/forms';
-import {inscription} from './model/user'
+import {inscription} from '../model/user'
 @Injectable({
   providedIn: 'root'
 })
@@ -10,7 +10,7 @@ export class UsersService {
   user= {
     pseudo:'',
     email:'',
-    
+    password:'',
   };
   creationForm= FormGroup;
   APIadress = 'http://localhost:3300/';

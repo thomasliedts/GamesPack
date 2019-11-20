@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, NgForm } from '@angular/forms';
 import{inscription} from '../model/user'
 import { Observable } from 'rxjs';
-import { UsersService } from '../users.service';
+import { UsersService } from '../service/users.service';
 import { Router } from '@angular/router';
 
 @Component({
