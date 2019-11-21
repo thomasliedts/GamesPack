@@ -5,12 +5,14 @@ import {ReactiveFormsModule,FormsModule} from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InscriptComponent } from './inscript/inscript.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InscriptComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
