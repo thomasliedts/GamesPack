@@ -27,16 +27,18 @@ header{
         flex-direction: row-reverse;
         width: 100vw;
         background-color: #6B7DB3 !important;
+        button{
+            background-color: #E2E5EB;
+            margin-left: -1vh;
+        }
         #logo{
         height: 10vh;
-        left:-15px;
+        left:10px;
         top: 17px;
         }
      h1{
         color: #E2E5EB;
-        position: relative;
-        top: 32px;
-        right: 55px;
+        margin-top: 2vh;
         text-transform: uppercase;
         font-size: 21px;
         }
