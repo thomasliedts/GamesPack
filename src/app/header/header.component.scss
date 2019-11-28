@@ -3,6 +3,7 @@ header{
     // justify-content: space-around;
     height: 20vh;
     nav{
+        
         width: 100vw;
         background-color: #6B7DB3 !important;
       #logo{
@@ -12,15 +13,27 @@ header{
         left: 25px;
         }  
         h1{
+            color: #E2E5EB;
             text-transform: uppercase;
+            font-size: 36px;
         }
+        a{
+            color: #E2E5EB;
+            font-size: 24px;
+            padding-left: 1vw;
+        }
+    }
+    #navigat{
+        padding-left: 10vw;
+    }
+    #connect{
+        padding-left: 12vw;
     }
     
 }
 
-
-@media screen and (max-width:420px){
-header{
+@media screen and (max-width:990px){
+    header{
     height: 15vh;
     display: flex;
     nav{
@@ -30,20 +43,53 @@ header{
         button{
             background-color: #E2E5EB;
             margin-left: -1vh;
-        }
+         }
         #logo{
         height: 10vh;
         left:10px;
         top: 17px;
-        }
+            }
      h1{
         color: #E2E5EB;
         margin-top: 2vh;
         text-transform: uppercase;
         font-size: 21px;
+         }
+         a{
+             font-size: 14px;
+             color: #2B2E36;
+         }
         }
+    
+    
     }
+}
+
+// @media screen and (max-width:420px){
+// header{
+//     height: 15vh;
+//     display: flex;
+//     nav{
+//         flex-direction: row-reverse;
+//         width: 100vw;
+//         background-color: #6B7DB3 !important;
+//         button{
+//             background-color: #E2E5EB;
+//             margin-left: -1vh;
+//         }
+//         #logo{
+//         height: 10vh;
+//         left:10px;
+//         top: 17px;
+//         }
+//      h1{
+//         color: #E2E5EB;
+//         margin-top: 2vh;
+//         text-transform: uppercase;
+//         font-size: 21px;
+//         }
+//     }
     
     
-}
-}
+// }
+// }
