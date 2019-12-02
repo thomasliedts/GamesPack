@@ -5,6 +5,7 @@
 }
 
 #card{
+    overflow: auto;
     width: 40vw;
     height: 60vh;
     background-color: white;
@@ -12,9 +13,14 @@
     padding-bottom: 1vh;
     .imgG{
         height: 25vh;
-        width: 20vw;
+        width: 40vw;
         background-size: contain;
         background-repeat: no-repeat;
+ 
+    }
+    .desc, p{
+        overflow: hidden;
+        color: red;
     }
 }
 
