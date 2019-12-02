@@ -1,8 +1,21 @@
+#separateur{
+    width: 100vw;
+    height: 4vh;
+    background-color: #E2E5EB;
+}
+
 #card{
     width: 40vw;
     height: 60vh;
     background-color: white;
     margin-left: 5vw;
+    padding-bottom: 1vh;
+    .imgG{
+        height: 25vh;
+        width: 20vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
 
