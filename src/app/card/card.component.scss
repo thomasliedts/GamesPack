@@ -1,0 +1,15 @@
+#card{
+    width: 40vw;
+    height: 60vh;
+    background-color: white;
+    margin-left: 5vw;
+}
+
+
+@media screen and (max-width:420px){
+    #card{
+        width: 80vw;
+        height: 60vh;
+        background-color: white;
+    }
+}
