@@ -3,7 +3,11 @@
     height: 4vh;
     background-color: #E2E5EB;
 }
-
+.contain{
+    width: 40vw;
+    height: 60vh;
+    overflow: hidden;
+}
 #card{
     overflow-y: auto;
     overflow-x: hidden;
@@ -24,6 +28,7 @@
         background-repeat: no-repeat;
         margin: 3vh 1vw;
     }
+  
     .desc{
         margin: 0 1vw;
     }

@@ -1,10 +1,14 @@
 <div id="separateur"></div>
-<section id="card">
-    <div class="title">
-        {{gamesList?.name}}
-    </div>
-    <div class="imgG" [style.background-image]="'url('+ gamesList?.img +')'"></div>
-    <div class="desc" [innerHTML]="gamesList?.desc">
-      <!-- {{gamesList?.desc}} -->
-    </div>
-</section>
+<div class="contain"> 
+  <section id="card">
+      <div class="title">
+          {{gamesList?.name}}
+      </div>
+      <div class="imgG" [style.background-image]="'url('+ gamesList?.img +')'"></div>
+      
+        <div class="desc" [innerHTML]="gamesList?.desc"></div>
+     
+      
+      
+  </section> 
+</div>
