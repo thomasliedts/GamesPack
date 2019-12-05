@@ -1,3 +1,8 @@
+#section{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+}
 #separateur{
     width: 100vw;
     height: 4vh;
@@ -10,9 +15,16 @@
     border-radius: 10px;
     margin-left: 5vw;
     padding-bottom: 1vh;
-    
 }
-#card{
+.containTwo{
+    width: 40vw;
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 5vw;
+    padding-bottom: 1vh;
+}
+.card{
     overflow-y: auto;
     overflow-x: hidden;   
     width: 40vw;
@@ -51,7 +63,7 @@
         padding-bottom: 1vh;
         
     }
-    #card{
+    .card{
         width: 80vw;
         height: 60vh;
         background-color: white;
@@ -64,5 +76,8 @@
         background-repeat: no-repeat;
         margin: 3vh 1vw;
         }
+    }
+    .containTwo{
+        display: none;
     }
 }
