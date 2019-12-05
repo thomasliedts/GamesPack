@@ -2,11 +2,11 @@
 <div class="contain"> 
   <section id="card">
       <div class="title">
-          {{gamesList?.name}}
+          {{gamesDatas?.name | uppercase}}
       </div>
-      <div class="imgG" [style.background-image]="'url('+ gamesList?.img +')'"></div>
+      <div class="imgG" [style.background-image]="'url('+ gamesDatas?.img +')'"></div>
       
-        <div class="desc" [innerHTML]="gamesList?.desc"></div>
+        <div class="desc" [innerHTML]="gamesDatas?.desc"></div>
      
       
       

@@ -8,6 +8,8 @@ import {games} from '../model/games'
 export class ApiRawgerService {
   APIadress = 'http://localhost:3300/getData';
   data: any;
+  ApiAdress = 'http://localhost:3300/getDatas';
+  datas: any;
   constructor(private httpClient: HttpClient) { }
 
   getGames():Observable<games[]>{
@@ -16,5 +18,12 @@ export class ApiRawgerService {
 
   getData(){
     return this.httpClient.get(`${this.APIadress}`).toPromise();
+  }
+  getGame():Observable<games[]>{
+    return this.httpClient.get<games[]>(`${this.ApiAdress}`)
+  }
+
+  getDatas(){
+    return this.httpClient.get(`${this.ApiAdress}`).toPromise();
   }
 }

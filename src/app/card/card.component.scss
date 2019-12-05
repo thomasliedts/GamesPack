@@ -10,12 +10,14 @@
     border-radius: 10px;
     margin-left: 5vw;
     padding-bottom: 1vh;
+    
 }
 #card{
     overflow-y: auto;
     overflow-x: hidden;   
     width: 40vw;
     height: 60vh;
+    border-radius: 10px;
     background-color: white;
     margin-left: 5vw;
     padding-bottom: 1vh;
@@ -33,12 +35,22 @@
   
     .desc{
         margin: 0 1vw;
+        width: 33vw;
     }
    
 }
 
 
 @media screen and (max-width:420px){
+    .contain{
+        width: 80vw;
+        height: 60vh;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-left: 5vw;
+        padding-bottom: 1vh;
+        
+    }
     #card{
         width: 80vw;
         height: 60vh;
@@ -46,7 +58,11 @@
         margin-left: 11vw;
         box-shadow: -2px 3px 5px 5px #939687;
         .imgG{
-
+        height: 25vh;
+        width: 40vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 3vh 1vw;
         }
     }
 }

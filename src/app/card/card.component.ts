@@ -16,17 +16,27 @@ export class CardComponent implements OnInit {
 
   gamesGetList$: Observable<games[]>;
 
+  gamesGetData$: Observable<games[]>;
+
   public gamesList: any;
+
+  public gamesDatas: any;
 
   constructor(private ApiRawgerService:ApiRawgerService , private router: Router) {
     this.ApiRawgerService.getData().then(data =>{
       console.log(data);
       this.gamesList = data;
     });
+    this.ApiRawgerService.getDatas().then(data =>{
+      console.log(data);
+      this.gamesDatas = data;
+    });
    }
+
 
   ngOnInit() {
     this.gamesGetList$ = this.ApiRawgerService.getGames();
+    this.gamesGetData$ = this.ApiRawgerService.getGame();
   }
 
 }
