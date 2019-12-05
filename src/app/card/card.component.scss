@@ -7,11 +7,13 @@
     width: 40vw;
     height: 60vh;
     overflow: hidden;
+    border-radius: 10px;
+    margin-left: 5vw;
+    padding-bottom: 1vh;
 }
 #card{
     overflow-y: auto;
-    overflow-x: hidden;
-    border-radius: 10px;
+    overflow-x: hidden;   
     width: 40vw;
     height: 60vh;
     background-color: white;
