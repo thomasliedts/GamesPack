@@ -2,6 +2,6 @@ import { Url } from 'url';
 
 export interface games{
     name: String;
-    img: String;
+    img: Url;
     desc: String;
 }

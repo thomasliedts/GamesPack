@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable, from } from 'rxjs';
-import {games} from '../model/games'
-import {ApiRawgerService} from '../service/apiRawger.service'
+import {games} from '../../model/games'
+import {ApiRawgerService} from '../../service/apiRawger.service'
 
 @Component({
   selector: 'app-card',

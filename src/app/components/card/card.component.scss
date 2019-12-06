@@ -52,6 +52,36 @@
    
 }
 
+@media screen and (max-width:990px){
+    .contain{
+        width: 80vw;
+        height: 60vh;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-left: 5vw;
+        padding-bottom: 1vh;
+        
+    }
+    .card{
+        width: 80vw;
+        height: 60vh;
+        background-color: white;
+        margin-left: 11vw;
+        box-shadow: -2px 3px 5px 5px #939687;
+        .imgG{
+        height: 25vh;
+        width: 40vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 3vh 1vw;
+        }
+    }
+    .containTwo{
+        display: none;
+    }
+
+}
+
 
 @media screen and (max-width:420px){
     .contain{
