@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CardComponent } from './components/card/card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { JeuxComponent } from './pages/jeux/jeux.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { JeuxComponent } from './pages/jeux/jeux.component';
     HeaderComponent,
     FooterComponent,
     CardComponent,
-    JeuxComponent
+    JeuxComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
