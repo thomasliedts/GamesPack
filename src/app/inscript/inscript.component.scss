@@ -1,0 +1,21 @@
+form{
+    margin-top: 20vh;
+    .form-group{
+        margin-left: 40vw;
+        padding-top: 3vh;
+    }
+    #pseudo{
+        width: 20vw;
+       
+    }
+    #email{
+        width: 20vw;
+    }
+    #pwd{
+        width: 20vw;
+    }
+    button{
+      margin-left: 48vw;
+      margin-top: 3vh;
+    }
+}
