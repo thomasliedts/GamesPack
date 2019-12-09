@@ -89,6 +89,14 @@
         background-repeat: no-repeat;
         margin: 3vh 1vw;
         }
+        .buton{
+            height: 3vh;
+            width: 13vw;
+            padding-left: 2vw;
+            background-color: #2B2E36;
+            border-radius: 10px;
+            margin-left: 20vw;
+            }
     }
     .containTwo{
         display: none;
@@ -120,8 +128,17 @@
         background-repeat: no-repeat;
         margin: 3vh 1vw;
         }
+        .buton{
+        height: 6vh;
+        width: 25vw;
+        padding-left: 2vw;
+        background-color: #2B2E36;
+        border-radius: 10px;
+        margin-left: 20vw;
+        }
     }
     .containTwo{
         display: none;
     }
+    
 }

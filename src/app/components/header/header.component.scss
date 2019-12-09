@@ -27,7 +27,7 @@ header{
         padding-left: 10vw;
     }
     #connect{
-        padding-left: 12vw;
+        padding-left: 14vw;
     }
     .search{
         background-color: #E2E5EB;
@@ -37,6 +37,9 @@ header{
     }
     .search:hover{
         background-color: #6B7DB3;
+    }
+    .search:visited{
+        border:none;
     }
 }
 

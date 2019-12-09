@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-<<<<<<< src/app/app-routing.module.ts
-import { AccueilComponent } from './pages/accueil/accueil.component';
+import { AccueilComponent } from './pages/accueil/accueil.component'
 import { JeuxComponent } from './pages/jeux/jeux.component';
 import { ContactComponent } from './pages/contact/contact.component';
-=======
-import { InscriptComponent } from './inscript/inscript.component';
-import { LoginComponent } from './login/login.component';
->>>>>>> src/app/app-routing.module.ts
+import { InscriptComponent } from './pages/inscript/inscript.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 const routes: Routes = [
