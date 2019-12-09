@@ -1,4 +1,16 @@
 section{
     height: 70vh;
     overflow: auto;
+    p{
+        margin-top: 30vh;
+        padding-left: 32vw;
+    }
+    a{
+        color: #6B7DB3;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    a:visited{
+        color: #B4B4B4;
+    }
 }

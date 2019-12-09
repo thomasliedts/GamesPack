@@ -50,7 +50,20 @@
         margin: 0 1vw;
         width: 33vw;
     }
-   
+   .buton{
+       height: 6vh;
+       width: 6vw;
+       padding-left: 1vw;
+       background-color: #2B2E36;
+       border-radius: 10px;
+       margin-left: 28vw;
+       a{
+           color: #E2E5EB;
+       }
+   }
+   .buton:hover{
+       background-color: #6B7DB3;
+   }
 }
 
 @media screen and (max-width:990px){

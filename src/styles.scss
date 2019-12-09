@@ -4,4 +4,16 @@ body{
     font-family: 'Roboto',Arial, Helvetica, sans-serif;
     background-color: #E2E5EB;
     height: 100vh;
+    p{
+        font-size: 20px;
+        color: #2B2E36;
+    }
+    a{
+        color: #6B7DB3;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    a:visited{
+        color: #B4B4B4;
+    }
 }
