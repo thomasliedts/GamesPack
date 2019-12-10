@@ -18,7 +18,6 @@ export class UsersService {
   constructor(private httpClient: HttpClient) { }
   createUser(userPost:inscription){
     console.log('user create');
-    console.log(userPost)
     return this.httpClient.post<inscription>(`${this.APIadress}users`,userPost)
   }
 }
