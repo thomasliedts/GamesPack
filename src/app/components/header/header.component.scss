@@ -32,7 +32,7 @@ header{
     .search{
         background-color: #E2E5EB;
         border: 0px;
-        height: 4vh;
+        height: 50%;
         width: 20%;
     }
     .search:hover{
@@ -60,6 +60,17 @@ header{
         left:10px;
         top: 17px;
             }
+            #navigat{
+        padding-left: 0vw;
+            }
+            #connect{
+        padding-left: 0vw;
+          }
+          ul{
+              width: 32%;
+              background-color: gray;
+              z-index: 5;
+          }
      h1{
         color: #E2E5EB;
         margin-top: 2vh;
