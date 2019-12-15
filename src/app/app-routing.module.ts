@@ -5,6 +5,7 @@ import { JeuxComponent } from './pages/jeux/jeux.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { InscriptComponent } from './pages/inscript/inscript.component';
 import { LoginComponent } from './pages/login/login.component';
+import { ProfilComponent } from './pages/profil/profil.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path:'login',
     component:LoginComponent
+  },
+  {
+    path:'profil',
+    component:ProfilComponent
   }
 ];
 

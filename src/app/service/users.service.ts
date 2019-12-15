@@ -1,23 +1,23 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormBuilder, FormGroup, NgForm } from '@angular/forms';
-import {inscription} from '../model/user'
+import {User} from '../model/user'
 @Injectable({
   providedIn: 'root'
 })
 
 export class UsersService {
   user= {
-    pseudo:'',
+    name:'',
     email:'',
     password:'',
   };
   creationForm= FormGroup;
-  APIadress = 'http://localhost:3300/';
+  APIadress = 'http://localhost:4000/api/register-user';
   data: any;
   constructor(private httpClient: HttpClient) { }
-  createUser(userPost:inscription){
+  createUser(userPost:User){
     console.log('user create');
-    return this.httpClient.post<inscription>(`${this.APIadress}users`,userPost)
+    return this.httpClient.post<User>(`${this.APIadress}users`,userPost)
   }
 }

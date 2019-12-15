@@ -6,9 +6,9 @@ import {games} from '../model/games'
   providedIn: 'root'
 })
 export class ApiRawgerService {
-  APIadress = 'http://localhost:3300/getData';
+  APIadress = 'http://localhost:4000/api/getData';
   data: any;
-  ApiAdress = 'http://localhost:3300/getDatas';
+  ApiAdress = 'http://localhost:4000/api/getDatas';
   datas: any;
   constructor(private httpClient: HttpClient) { }
 

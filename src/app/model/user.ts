@@ -1,6 +1,6 @@
-export interface inscription {
+export class User {
 	_id: String;
-	Pseudo: String;
+	name: String;
 	email: String;
 	password: String;
 }

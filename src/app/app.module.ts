@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
 import {ReactiveFormsModule,FormsModule} from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +12,8 @@ import { JeuxComponent } from './pages/jeux/jeux.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { InscriptComponent } from './pages/inscript/inscript.component';
 import { LoginComponent } from './pages/login/login.component';
-
+import { ProfilComponent } from './pages/profil/profil.component';
+import {AuthInterceptor} from './service/authconfig.interceptor'
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { LoginComponent } from './pages/login/login.component';
     ContactComponent,
     InscriptComponent,
     LoginComponent,
+    ProfilComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,13 @@ import { LoginComponent } from './pages/login/login.component';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide:HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
