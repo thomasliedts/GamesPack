@@ -6,6 +6,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { InscriptComponent } from './pages/inscript/inscript.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ProfilComponent } from './pages/profil/profil.component';
+import {AuthGuard} from './service/auth.guard'
 
 
 const routes: Routes = [
@@ -31,8 +32,8 @@ const routes: Routes = [
     component:LoginComponent
   },
   {
-    path:'profil',
-    component:ProfilComponent
+    path:'profil/:id',
+    component:ProfilComponent, canActivate:[AuthGuard]
   }
 ];
 
