@@ -13,7 +13,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { InscriptComponent } from './pages/inscript/inscript.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ProfilComponent } from './pages/profil/profil.component';
-import {AuthInterceptor} from './service/authconfig.interceptor'
+import {AuthInterceptor} from './service/authconfig.interceptor';
+import { TestComponent } from './pages/test/test.component'
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import {AuthInterceptor} from './service/authconfig.interceptor'
     InscriptComponent,
     LoginComponent,
     ProfilComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
