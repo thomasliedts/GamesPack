@@ -14,7 +14,9 @@ import { InscriptComponent } from './pages/inscript/inscript.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ProfilComponent } from './pages/profil/profil.component';
 import {AuthInterceptor} from './service/authconfig.interceptor';
-import { TestComponent } from './pages/test/test.component'
+import { TestComponent } from './pages/test/test.component';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { AccesdeniedComponent } from './pages/accesdenied/accesdenied.component'
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { TestComponent } from './pages/test/test.component'
     LoginComponent,
     ProfilComponent,
     TestComponent,
+    NotfoundComponent,
+    AccesdeniedComponent,
   ],
   imports: [
     BrowserModule,

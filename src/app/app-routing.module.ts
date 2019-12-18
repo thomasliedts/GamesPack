@@ -8,6 +8,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { ProfilComponent } from './pages/profil/profil.component';
 import {AuthGuard} from './service/auth.guard'
 import { TestComponent } from './pages/test/test.component';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { AccesdeniedComponent } from './pages/accesdenied/accesdenied.component';
 
 
 const routes: Routes = [
@@ -39,6 +41,14 @@ const routes: Routes = [
   {
     path:'test',
     component:TestComponent,canActivate:[AuthGuard]
+  },
+  {
+    path:'404',
+    component:NotfoundComponent
+  },
+  {
+    path:'403',
+    component:AccesdeniedComponent
   }
 ];
 
