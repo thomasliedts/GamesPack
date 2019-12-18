@@ -30,9 +30,10 @@ currentUser = {};
     return this.http.post<any>(`${this.endpoint}/signin`, user)
       .subscribe((res: any) => {
         localStorage.setItem('access_token', res.token)
+        localStorage.setItem('id', res._id)
         this.getUserProfile(res._id).subscribe((res) => {
           this.currentUser = res;
-          this.router.navigate(['user-profile/' + res.msg._id]);
+          this.router.navigate(['profil/' + res.msg._id]);
         })
       })
   }

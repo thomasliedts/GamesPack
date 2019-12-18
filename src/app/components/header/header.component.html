@@ -25,7 +25,7 @@
             <ul class="navbar-nav mr-auto " id="connect">
                 <li class="nav-item ">
                     <a *ngIf="!this.authService.isLoggedIn" class="nav-link " routerLinkActive="active" routerLink="/inscript" >Inscription</a>
-                    <a *ngIf="this.authService.isLoggedIn" routerLink="/profil/:id">Profil</a>
+                    <a *ngIf="this.authService.isLoggedIn" [routerLink]="['/profil', lol]">Profil</a>
                 </li>
                 <li class="nav-item">
                     <a *ngIf="!this.authService.isLoggedIn" class="nav-link" routerLinkActive="active"  routerLink="/login" >Connexion</a>

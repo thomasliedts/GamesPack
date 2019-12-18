@@ -28,7 +28,7 @@ export class InscriptComponent implements OnInit {
     this.authService.signUp(this.creationForm.value).subscribe((res) => {
       if (res.result) {
         this.creationForm.reset()
-        this.router.navigate(['log-in']);
+        this.router.navigate(['login']);
       }
     })
   }
