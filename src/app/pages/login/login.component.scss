@@ -1,4 +1,20 @@
 .contain{
     height: 73vh;
     overflow: hidden;
+    .form-group{
+        margin-left: 37vw;
+        padding-top: 3vh;
+    }
+    
+    #email{
+        width: 20vw;
+    }
+    #password{
+        width: 20vw;
+    }
+    button{
+        margin-left: 41vw;
+        margin-top: 3vh;
+        width: 9vw;
+      }
 }

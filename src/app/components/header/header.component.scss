@@ -29,17 +29,22 @@ header{
     #connect{
         padding-left: 14vw;
     }
-    .search{
-        background-color: #E2E5EB;
-        border: 0px;
-        height: 85%;
-        width: 20%;
-    }
-    .search:hover{
-        background-color: #6B7DB3;
-    }
-    .search:visited{
-        border:none;
+    // .search{
+    //     background-color: #E2E5EB;
+    //     border: 0px;
+    //     height: 85%;
+    //     width: 20%;
+    // }
+    // .search:hover{
+    //     background-color: #6B7DB3;
+    // }
+    // .search:visited{
+    //     border:none;
+    // }
+    button{
+        background-color:#6B7DB3 ;
+        border: none;
+        margin-left: 1vw;
     }
 }
 

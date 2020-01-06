@@ -10,6 +10,8 @@ import {AuthGuard} from './service/auth.guard'
 import { TestComponent } from './pages/test/test.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { AccesdeniedComponent } from './pages/accesdenied/accesdenied.component';
+import { AdminComponent } from './pages/admin/admin.component';
+import { PostTestComponent } from './pages/post-test/post-test.component';
 
 
 const routes: Routes = [
@@ -49,6 +51,13 @@ const routes: Routes = [
   {
     path:'403',
     component:AccesdeniedComponent
+  },
+  {
+    path:'post-test',
+    component:PostTestComponent
+  },
+  {path:'admin',
+  component:AdminComponent,canActivate:[AuthGuard]
   }
 ];
 

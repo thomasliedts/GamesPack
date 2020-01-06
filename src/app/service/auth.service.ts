@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {User} from '../model/user'
-import { Observable, throwError } from 'rxjs';
+import {Test} from '../model/test'
+import { Observable, throwError, from } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Router } from '@angular/router';
@@ -24,6 +25,14 @@ currentUser = {};
         catchError(this.handleError)
       )
   }
+// Publish Test
+testUp(test: Test): Observable<any> {
+  let api = `${this.endpoint}/create-test`;
+  return this.http.post(api, test)
+    .pipe(
+      catchError(this.handleError)
+    )
+}
 
   // Sign-in
   signIn(user: User) {

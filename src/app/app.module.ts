@@ -16,7 +16,9 @@ import { ProfilComponent } from './pages/profil/profil.component';
 import {AuthInterceptor} from './service/authconfig.interceptor';
 import { TestComponent } from './pages/test/test.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
-import { AccesdeniedComponent } from './pages/accesdenied/accesdenied.component'
+import { AccesdeniedComponent } from './pages/accesdenied/accesdenied.component';
+import { AdminComponent } from './pages/admin/admin.component';
+import { PostTestComponent } from './pages/post-test/post-test.component'
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { AccesdeniedComponent } from './pages/accesdenied/accesdenied.component'
     TestComponent,
     NotfoundComponent,
     AccesdeniedComponent,
+    AdminComponent,
+    PostTestComponent,
   ],
   imports: [
     BrowserModule,

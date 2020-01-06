@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div class="auth-wrapper">
+    <form class="form-posttest" [formGroup]="creationForm" (ngSubmit)="registerTest()">
+        <div class="form-group">
+            <label>Jeu</label>
+            <input type="text" class="form-control" formControlName="jeu" placeholder="Entrez le nom du jeu" id="jeu" required>
+        </div>
+        <div class="form-group">
+            <label>Test</label>
+            <textarea class="form-control" formControlName="test" placeholder="Entrez votre test ici" id="Test" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="form-group">
+            <label>Note</label>
+            <input type="number" min="0" max="20" class="form-control" formControlName="note" id="note"  required>
+        </div>
+        <div class="form-group">
+            <label>Pseudo</label>
+            <input type="text" class="form-control" formControlName="pseudo" placeholder="Entrez votre pseudo" id="pseudo" required>
+        </div>
+        <button type="submit" class="btn btn-block btn-primary" >Publier</button>
+    </form>
+</div>
+<app-footer></app-footer>

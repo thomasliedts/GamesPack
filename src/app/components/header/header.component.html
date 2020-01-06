@@ -17,10 +17,13 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/jeux">Jeux</a>
                 </li>
-                <form class="form-inline my-2 my-lg-2">
+                <li class="nav-item">
+                    <a *ngIf="this.authService.isLoggedIn" routerLink="/post-test" >Publiez un test</a>
+                </li>
+                <!-- <form class="form-inline my-2 my-lg-2">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0 search" type="submit"><img src="../../assets/img/magnifier_icon-icons.com_56922.png" alt=""></button>
-            </form>
+            </form> -->
             </ul>
             <ul class="navbar-nav mr-auto " id="connect">
                 <li class="nav-item ">
@@ -29,7 +32,7 @@
                 </li>
                 <li class="nav-item">
                     <a *ngIf="!this.authService.isLoggedIn" class="nav-link" routerLinkActive="active"  routerLink="/login" >Connexion</a>
-                    <button (click)="logout()" *ngIf="this.authService.isLoggedIn" type="button" class="btn btn-danger">Logout</button>
+                    <button (click)="logout()" *ngIf="this.authService.isLoggedIn" type="button" class="btn btn-danger">Déconnexion</button>
                 </li>
             </ul>
             
