@@ -28,7 +28,7 @@ export class PostTestComponent implements OnInit {
     this.authService.testUp(this.creationForm.value).subscribe((res) => {
       if (res.result) {
         this.creationForm.reset()
-        this.router.navigate(['test']);
+        this.router.navigate(['jeux']);
       }
     })
   }

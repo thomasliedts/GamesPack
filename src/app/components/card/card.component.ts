@@ -4,6 +4,7 @@ import { Observable, from } from 'rxjs';
 import {games} from '../../model/games'
 import {ApiRawgerService} from '../../service/apiRawger.service'
 
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',

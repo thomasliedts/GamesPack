@@ -1,4 +1,41 @@
 form{
     height: 73vh;
-    // padding-top: 10vh;
+    margin-left: 1vw;
+   #jeu{
+    width: 20vw;
+   }
+   #test{
+    width: 90vw;
+   }
+   #note{
+    width: 20vw;
+   }
+   #pseudo{
+    width: 20vw;
+   }
+   button{
+       width: 10vw;
+   }
+}
+
+@media screen and (max-width:990px){
+    form{
+        height: 73vh;
+        margin-left: 1vw;
+       #jeu{
+        width: 55vw;
+       }
+       #test{
+        width: 90vw;
+       }
+       #note{
+        width: 55vw;
+       }
+       #pseudo{
+        width: 55vw;
+       }
+       button{
+           width: 55vw;
+       }
+    }
 }

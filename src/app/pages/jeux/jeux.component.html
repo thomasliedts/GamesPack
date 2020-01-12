@@ -1,7 +1,14 @@
 <app-header></app-header>
 <div class="contain">
-    <div id="separateur"></div>
-    <section></section>
+    <section>
+        <div class="card"  *ngFor="let test of tests">
+            <div class="card-body" tabindex="0">
+              <h5 class="card-title" id="titre">{{test.jeu}}</h5>
+              <p class="card-text" id="corps">{{test.test}}</p>
+              <p id="note">{{test.note}}<span id="twenty">/20</span> </p>
+            </div>
+          </div>
+    </section>
 </div>
 
 <app-footer></app-footer>

@@ -49,12 +49,15 @@ const routes: Routes = [
     component:NotfoundComponent
   },
   {
-    path:'403',
-    component:AccesdeniedComponent
-  },
-  {
     path:'post-test',
     component:PostTestComponent
+  },
+  { 
+    path: "**", 
+    redirectTo: "404" },
+  {
+    path:'403',
+    component:AccesdeniedComponent
   },
   {path:'admin',
   component:AdminComponent,canActivate:[AuthGuard]

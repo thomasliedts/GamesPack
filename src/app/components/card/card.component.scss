@@ -16,7 +16,7 @@
     border-radius: 10px;
     margin-left: 5vw;
     padding-bottom: 1vh;
-    z-index: -1;
+    // z-index: -1;
 }
 .containTwo{
     width: 40vw;
@@ -39,12 +39,16 @@
     .title{
         margin: 1vh 1vw;
     }
+    img{
+        border: none;
+    }
     .imgG{
         height: 25vh;
         width: 40vw;
         background-size: contain;
         background-repeat: no-repeat;
         margin: 3vh 1vw;
+        border: none;
     }
   
     .desc{
@@ -75,7 +79,7 @@
         border-radius: 10px;
         margin-left: 5vw;
         padding-bottom: 1vh;
-        
+        z-index: -1;
     }
     .card{
         width: 80vw;
@@ -114,7 +118,7 @@
         border-radius: 10px;
         margin-left: 5vw;
         padding-bottom: 1vh;
-        
+        z-index: -1;
     }
     .card{
         width: 80vw;

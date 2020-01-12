@@ -27,10 +27,7 @@ export class HeaderComponent implements OnInit {
     })
   }
 
-  // toGo() {
-  //   this.router.navigate(["profil", this.lol])
-  //   // [routerLink] = "['profil', currentUser.msg._id]"
-  // }
+  
 
   logout() {
     this.authService.doLogout()
