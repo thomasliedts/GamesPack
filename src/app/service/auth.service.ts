@@ -75,7 +75,7 @@ testUp(test: Test): Observable<any> {
   }
 
   // Update user
-  updateUser(user: any, id: any){
+  updateUsers(user: any, id: any){
     let api = `${this.endpoint}/update-user/${id}`;
     return this.http.put(api, user)
   }
